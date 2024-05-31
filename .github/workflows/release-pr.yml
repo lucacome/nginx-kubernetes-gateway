@@ -31,6 +31,16 @@ jobs:
         with:
           ref: ${{ steps.branch.outputs.branch }}
 
+      - name: Get Release Notes
+        id: notes
+        uses: lucacome/draft-release@8a63d32c79a171ae6048e614a8988f0ac3ed56d4 # v1.1.0
+        with:
+          config-path: .github/release-notes.yml
+          dry-run: true
+
+      - name: Print Release Notes
+        run: echo "${{ fromJson(steps.notes.outputs.release-sections).release-notes }}"
+
       - name: Vars
         id: vars
         run: |
