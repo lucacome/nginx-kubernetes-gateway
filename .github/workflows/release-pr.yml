@@ -41,7 +41,7 @@ jobs:
           dry-run: true
 
       - name: Print Release Notes
-        run: echo "${{ fromJson(steps.notes.outputs.release-sections).release-notes }}"
+        run: echo "${{ join(fromJson(steps.notes.outputs.release-sections).release-notes, '\n') }}"
 
       - name: Vars
         id: vars
