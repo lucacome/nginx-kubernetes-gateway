@@ -8,5 +8,16 @@
       "examples/.+\\.yaml$",
       "suite/.+\\.yaml$"
     ]
-  }
+  },
+  "packageRules": [
+    {
+      "matchManagers": [
+        "gomod"
+      ],
+      "matchDepTypes": [
+        "golang"
+      ],
+      "rangeStrategy": "bump"
+    }
+  ]
 }
