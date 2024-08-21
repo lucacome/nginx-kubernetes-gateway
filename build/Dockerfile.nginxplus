@@ -7,7 +7,8 @@ ADD --link --chown=101:1001 https://cs.nginx.com/static/keys/nginx_signing.rsa.p
 
 FROM alpine:3.20
 
-ARG NGINX_PLUS_VERSION=R32
+# renovate: datasource=custom.nginx-plus depName=nginx-plus versioning=loose
+ARG NGINX_PLUS_VERSION=R31
 ARG NJS_DIR
 ARG NGINX_CONF_DIR
 ARG BUILD_AGENT
