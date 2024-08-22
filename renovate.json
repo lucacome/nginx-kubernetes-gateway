@@ -11,10 +11,16 @@
   },
   "packageRules": [
     {
-      "matchDatasources": [
-        "golang-version"
+      "matchManagers": [
+        "gomod"
       ],
-      "updateType": "minor"
+      "matchDepTypes": [
+        "indirect"
+      ],
+      "matchFileNames": [
+        "site/go.mod"
+      ],
+      "enabled": true
     }
   ]
 }
