@@ -8,5 +8,8 @@
       "examples/.+\\.yaml$",
       "suite/.+\\.yaml$"
     ]
-  }
+  },
+  "postUpdateOptions": [
+    "gomodMassage"
+  ]
 }
