@@ -17,8 +17,7 @@
       "matchDepTypes": [
         "golang"
       ],
-      "rangeStrategy": "bump",
-      "updateTypes": [
+      "matchUpdateTypes": [
         "patch"
       ]
     }
