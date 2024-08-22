@@ -11,15 +11,10 @@
   },
   "packageRules": [
     {
-      "matchManagers": [
-        "gomod"
+      "matchDatasources": [
+        "golang-version"
       ],
-      "matchDepTypes": [
-        "golang"
-      ],
-      "matchUpdateTypes": [
-        "patch"
-      ]
+      "updateType": "minor"
     }
   ]
 }
