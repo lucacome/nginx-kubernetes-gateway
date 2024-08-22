@@ -9,5 +9,15 @@
       "suite/.+\\.yaml$"
     ]
   },
-  "rangeStrategy": "bump"
+  "packageRules": [
+    {
+      "matchManagers": [
+        "gomod"
+      ],
+      "matchDepTypes": [
+        "golang"
+      ],
+      "rangeStrategy": "widen"
+    }
+  ]
 }
