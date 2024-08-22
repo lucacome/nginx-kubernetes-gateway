@@ -10,8 +10,8 @@ import (
 const (
 	CollectorNamespace        = "collector"
 	collectorChartReleaseName = "otel-collector"
-
-	// renovate: datasource=helm depName=opentelemetry-helm/opentelemetry-collector
+	//nolint:lll
+	// renovate: datasource=helm depName=opentelemetry-collector registryUrl=https://open-telemetry.github.io/opentelemetry-helm-charts
 	collectorChartVersion = "0.73.1"
 )
 
