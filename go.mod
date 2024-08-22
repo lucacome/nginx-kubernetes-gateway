@@ -1,6 +1,6 @@
 module github.com/nginxinc/nginx-gateway-fabric
 
-go 1.22.0
+go 1.23.0
 
 require (
 	github.com/ahmetb/gen-crd-api-reference-docs v0.3.0
