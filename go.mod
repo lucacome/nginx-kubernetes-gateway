@@ -8,7 +8,7 @@ require (
 	github.com/google/go-cmp v0.6.0
 	github.com/maxbrunsfeld/counterfeiter/v6 v6.11.2
 	github.com/nginxinc/nginx-plus-go-client v1.3.0
-	github.com/nginxinc/nginx-prometheus-exporter v1.3.0
+	github.com/nginxinc/nginx-prometheus-exporter v1.4.1
 	github.com/nginxinc/telemetry-exporter v0.1.2
 	github.com/onsi/ginkgo/v2 v2.22.2
 	github.com/onsi/gomega v1.36.2
